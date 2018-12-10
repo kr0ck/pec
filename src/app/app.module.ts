@@ -12,12 +12,24 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './views/home/home.component';
 import { UiModule } from './ui/ui.module';
 import { LoginComponent } from './views/login/login.component';
+import { FuncionarioCadComponent } from './views/funcionario-cad/funcionario-cad.component';
+import { FuncionarioListComponent } from './views/funcionario-list/funcionario-list.component';
+import { CursoListComponent } from './views/curso-list/curso-list.component';
+import { CursoCadComponent } from './views/curso-cad/curso-cad.component';
+import { CargoCadComponent } from './views/cargo-cad/cargo-cad.component';
+import { FuncaoCadComponent } from './views/funcao-cad/funcao-cad.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    FuncionarioCadComponent,
+    FuncionarioListComponent,
+    CursoListComponent,
+    CursoCadComponent,
+    CargoCadComponent,
+    FuncaoCadComponent
   ],
   imports: [
     BrowserModule,
