@@ -1,3 +1,53 @@
-<p>
-  curso-list works!
-</p>
+<app-layout>
+  <div class="row">
+    <div class="col-md-12">
+      <h3 class="title-5 m-b-35">Funcionários</h3>
+      <div class="table-data__tool">
+        <div class="table-data__tool-right">
+          <button class="au-btn au-btn-icon au-btn--green au-btn--small">
+            <a href="#">Cadastrar Funcionário</a>
+          </button>
+        </div>
+      </div>
+      <div class="table-responsive table-responsive-data2">
+        <table class="table table-data2">
+          <thead>
+            <tr>
+              <th *ngFor="let head of headElements" scope="col">{{ head }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="tr-shadow" mdbTableCol *ngFor="let el of elements">
+              <td scope="row">{{ el.id }}</td>
+              <td>{{ el.name }}</td>
+              <td>{{ el.modalidade }}</td>
+              <td>{{ el.cargHora }}</td>
+              <td>
+                <div class="table-data-feature">
+                  <button
+                    class="item"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="Editar"
+                  >
+                    <i class="fa fa-edit"></i>
+                  </button>
+                  <button
+                    class="item"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="Deletar"
+                  >
+                    <i class="fa fa-close"></i>
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr class="spacer"></tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- END DATA TABLE -->
+    </div>
+  </div>
+</app-layout>
