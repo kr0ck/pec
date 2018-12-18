@@ -1,12 +1,14 @@
-<div class="container">
-  <h3 align="center">ADCIONAR FUNCIONÁRIOS</h3>
-  <form #form="ngForm" (ngSubmit)="enviarForm(form.value)">
-    <p>Matícula: <input type="text" name="matricula" /></p>
-    <p>CPF: <input type="text" name="cpf" /></p>
-    <p>Nome: <input type="text" name="nome" /></p>
-    Administrador<input type="checkbox" name="adm" id="checkboxAdm">
-    <br /><br />
-    <button type="submit">SALVAR</button>
-    <a><button name="voltar_adm">VOLTAR</button></a><br />
-  </form>
-</div>
+<app-layout>
+  <div class="container">
+    <h3 align="center">ADCIONAR FUNCIONÁRIOS</h3>
+    <form #form="ngForm" (ngSubmit)="enviarForm(form.value)">
+      <p>Matícula: <input type="text" name="matricula" /></p>
+      <p>CPF: <input type="text" name="cpf" /></p>
+      <p>Nome: <input type="text" name="nome" /></p>
+      Administrador<input type="checkbox" name="adm" id="checkboxAdm" />
+      <br /><br />
+      <button type="submit">SALVAR</button>
+      <a><button name="voltar_adm">VOLTAR</button></a><br />
+    </form>
+  </div>
+</app-layout>

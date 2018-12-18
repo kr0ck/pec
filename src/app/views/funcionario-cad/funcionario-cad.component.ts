@@ -8,7 +8,7 @@ import { Router, Route } from '@angular/router';
 })
 export class FuncionarioCadComponent implements OnInit {
 
-  constructor(private _router:Router) { }
+  constructor(private _router: Router) { }
 
   ngOnInit() {
   }
