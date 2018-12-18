@@ -1,34 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-      
-    
-</head>
-<body>
-	<div id="div_inicio">
-		
-		<h3 align="center">ADCIONAR FUNCIONÁRIOS</h3>
-
-		<p>Matícula: 
-			<input type="text" size="8" maxlength="8" name="matricula">	</p>
-		<p>CPF: 
-			<input type="text" size="11" maxlength="11" name="cpf">	</p>
-		<p>Nome: 
-			<input type="text" size="40" maxlength="40" name="nome">	</p>
-		
-		
-		<p>Administrador 1(sim) ou 0(não): 
-			<select name="adm">
-                        <option></option>
-                        <option>0</option>
-                        <option>1</option>
-
-			</select>	
-			<br><br>
-			<button name="salvar_funcionario">SALVAR</button>
-			<button name="limpar">LIMPAR CAMPOS</button>
-			<a href="adm.php" ><button name="voltar_adm">VOLTAR</button></a><br>
-	</div>
-		
-</body>
-</html>
+<div class="container">
+  <h3 align="center">ADCIONAR FUNCIONÁRIOS</h3>
+  <form #form="ngForm" (ngSubmit)="enviarForm(form.value)">
+    <p>Matícula: <input type="text" name="matricula" /></p>
+    <p>CPF: <input type="text" name="cpf" /></p>
+    <p>Nome: <input type="text" name="nome" /></p>
+    Administrador<input type="checkbox" name="adm" id="checkboxAdm">
+    <br /><br />
+    <button type="submit">SALVAR</button>
+    <a><button name="voltar_adm">VOLTAR</button></a><br />
+  </form>
+</div>
