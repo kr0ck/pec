@@ -1,3 +1,13 @@
-<p>
-  curso-cad works!
-</p>
+<app-layout>
+  <div class="container">
+    <h3 align="center">ADCIONAR CURSO</h3>
+    <form #form="ngForm" (ngSubmit)="enviarForm(form.value)">
+      <p>Nome: <input type="text" name="matricula" /></p>
+      <p>Modalidade: <input type="text" name="cpf" /></p>
+      <p>Carga Horária: <input type="text" name="nome" /></p>
+      <br /><br />
+      <button type="submit">SALVAR</button>
+      <a><button name="voltar_adm">VOLTAR</button></a><br />
+    </form>
+  </div>
+</app-layout>

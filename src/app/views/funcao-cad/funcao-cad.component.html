@@ -1,3 +1,13 @@
-<p>
-  funcao-cad works!
-</p>
+<app-layout>
+  <div class="container">
+    <h3 align="center">ADCIONAR FUNÇÃO</h3>
+    <form #form="ngForm" (ngSubmit)="enviarForm(form.value)">
+      <p>Função: <input type="text" name="fucao" /></p>
+      dm" />
+      <br /><br />
+      <button type="submit">SALVAR</button>
+      <a><button name="voltar_adm">VOLTAR</button></a><br />
+    </form>
+  </div>
+</app-layout>
+
