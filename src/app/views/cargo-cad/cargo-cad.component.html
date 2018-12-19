@@ -1,3 +1,10 @@
-<p>
-  cargo-cad works!
-</p>
+<app-layout>
+  <div class="container">
+    <h3 align="center">ADCIONAR CARGO</h3>
+    <form #form="ngForm" (ngSubmit)="enviarForm(form.value)">
+      <p>Nome do Cargo: <input type="text" name="fucao" /></p>
+      <button type="submit">SALVAR</button>
+      <a><button name="voltar_adm">VOLTAR</button></a><br />
+    </form>
+  </div>
+</app-layout>

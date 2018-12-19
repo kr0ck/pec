@@ -1,0 +1,21 @@
+.container{
+    display:grid;
+    align-content: center;
+    justify-content: center;
+  }
+  
+  form{
+    max-width: 500px;
+  }
+  
+  input{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 14px 8px;
+    padding: 5px 5px;
+  }
+  #checkboxAdm {
+    width: 10%;
+  }
+  
