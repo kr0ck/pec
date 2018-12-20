@@ -1,29 +1,51 @@
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
 
-  <div class="wrapper fadeInDown">
-    <div id="formContent">
-      <!-- Tabs Titles -->
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img
+        src="https://marketplace.magento.com/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/l/o/logo_24_1_1_1.png"
+        id="icon"
+        alt="User Icon"
+      />
+      <h1>PEC</h1>
+    </div>
 
-      <!-- Icon -->
-      <div class="fadeIn first">
-        <img src="https://marketplace.magento.com/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/l/o/logo_24_1_1_1.png" id="icon" alt="User Icon" />
-        <h1>PEC</h1>
-      </div>
+    <!-- Login Form -->
+    <form #form="ngForm" (ngSubmit)="enviarForm(form.value)">
+      <input
+        type="text"
+        id="login"
+        class="fadeIn second"
+        name="login"
+        placeholder="Seu Nome"
+      />
+      <input
+        type="password"
+        id="password"
+        class="fadeIn third"
+        name="login"
+        placeholder="Sua Senha"
+      />
+      <button type="submit" class="fadeIn fourth">Submit</button>
+      <button
+        (click)="socialSignIn('facebook')"
+        class="fadeIn fourth"
+        type="submit"
+      >
+        Sign in with Facebook
+      </button>
+    </form>
 
-      <!-- Login Form -->
-      <form #form="ngForm" (ngSubmit)="enviarForm(form.value)">
-        <input type="text" id="login" class="fadeIn second" name="login" placeholder="Seu Nome">
-        <input type="password" id="password" class="fadeIn third" name="login" placeholder="Sua Senha">
-        <button type="submit" class="fadeIn fourth">Submit</button>
-
-      </form>
-
-      <!-- Remind Passowrd -->
-      <div id="formFooter">
-        <a class="underlineHover nav-link" href="www.correios.com.br" target="_black">Vá para o Site</a>
-      </div>
-
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a
+        class="underlineHover nav-link"
+        href="www.correios.com.br"
+        target="_black"
+        >Vá para o Site</a
+      >
     </div>
   </div>
-
-
-
+</div>

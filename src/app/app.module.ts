@@ -4,7 +4,25 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { FormsModule } from '@angular/forms';
 
+import {
+  SocialLoginModule,
+  AuthServiceConfig,
+  GoogleLoginProvider,
+  FacebookLoginProvider,
+} from 'angular-6-social-login';
 
+// Configs
+export function getAuthServiceConfigs() {
+  let config = new AuthServiceConfig(
+      [
+        {
+          id: FacebookLoginProvider.PROVIDER_ID,
+          provider: new FacebookLoginProvider('2326166300987783')
+        },
+      ]
+  );
+  return config;
+}
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -37,9 +55,15 @@ import { FuncaoCadComponent } from './views/funcao-cad/funcao-cad.component';
     FormsModule,
     UiModule,
     NgbModule,
+    SocialLoginModule
 
   ],
-  providers: [],
+  providers: [
+    {
+      provide: AuthServiceConfig,
+      useFactory: getAuthServiceConfigs
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

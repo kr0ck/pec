@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, Route } from '@angular/router';
+
 
 @Component({
   selector: 'app-funcao-cad',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FuncaoCadComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _router: Router) { }
 
   ngOnInit() {
+  }
+  enviarForm(value) {
+    console.table(value);
+
+    this._router.navigate(['home']);
   }
 
 }
