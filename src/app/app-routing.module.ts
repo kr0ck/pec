@@ -6,6 +6,8 @@ import { FuncionarioCadComponent } from './views/funcionario-cad/funcionario-cad
 import { FuncionarioListComponent } from './views/funcionario-list/funcionario-list.component';
 import { CursoCadComponent } from './views/curso-cad/curso-cad.component';
 import { CursoListComponent } from './views/curso-list/curso-list.component';
+import { FuncaoCadComponent } from './views/funcao-cad/funcao-cad.component';
+import { CargoCadComponent } from './views/cargo-cad/cargo-cad.component';
 
 const routes: Routes = [
   {
@@ -31,6 +33,14 @@ const routes: Routes = [
   {
     path: 'Lista_dos_Curso',
     component: CursoListComponent
+  },
+  {
+    path: 'Cadastro_Funcao',
+    component: FuncaoCadComponent
+  },
+  {
+    path: 'Cadastro_Cargo',
+    component: CargoCadComponent
   }
 
 ];

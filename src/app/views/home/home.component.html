@@ -40,8 +40,8 @@
           Cargo/Função
         </button>
         <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-          <button class="dropdown-item">Cadastrar Cargo</button>
-          <button class="dropdown-item">Cadastrar Função</button>
+          <button class="dropdown-item"><a [routerLink]="['/Cadastro_Cargo']" routerLinkActive="router-link-active" >Cadastrar Cargo</a> </button>
+          <button class="dropdown-item"><a [routerLink]="['/Cadastro_Funcao']" routerLinkActive="router-link-active" >Cadastrar Função</a></button>
         </div>
       </div>
     </div>
